@@ -1,0 +1,26 @@
+[data-timeline] {
+  border-top: 1px dashed #000;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+[data-timeline] li {
+  list-style: none;
+  position: relative;
+  bottom: 8px;
+  text-align: center;
+  margin: 0 1%;
+}
+
+[data-timeline] details:before {
+  content: '\002022';
+}
+
+[data-timeline] summary:focus {
+  outline: none;
+}
+
+details summary::-webkit-details-marker  {
+  display: none;
+}
